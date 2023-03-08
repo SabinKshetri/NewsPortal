@@ -37,6 +37,11 @@
   color: #fff;
   text-decoration: none;
   padding: 0px 10px;
+  font-size: 20px;
+}
+.container .social-icon ul li a:hover {
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(239, 232, 232, 0.3);
+          box-shadow: 2px 2px 5px 3px rgba(239, 232, 232, 0.3);
 }
 
 .py {
@@ -57,16 +62,18 @@ nav .nav ul li a {
   text-decoration: none;
   color: #fff;
   padding: 0px 20px;
-  font-weight: 600;
+  font-weight: 550;
+  text-align: center;
 }
 nav .nav ul li a:hover {
   background: #DF0D00;
-  padding: 14px 20px;
+  padding: 5px 20px;
 }
 
 .btn {
-  padding: 4px 13px;
+  padding: 2px 13px;
   border: none;
+  background: #ccc;
   border-radius: 17px;
   margin: 10px;
   color: #DF0D00;
@@ -78,26 +85,11 @@ nav .nav ul li a:hover {
           box-shadow: 2px 2px 5px 2px rgba(243, 7, 7, 0.3);
 }
 
-.block1 .box {
+.block1 .box-1 {
   border-bottom: 2px solid #ccc;
 }
-.block1 .banner h3 {
+.block1 .banner p {
   text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-}
-.block1 .banner h3:hover {
-  color: #DF0D00;
-  cursor: pointer;
-}
-.block1 .banner .author {
-  text-align: center;
-  font-size: 25px;
-}
-.block1 .banner .author:hover {
-  color: #DF0D00;
-  cursor: pointer;
-}/*# sourceMappingURL=style.css.map */;
   font-size: 16px;
 }
 .block1 .banner h3 {
@@ -370,21 +362,6 @@ nav .nav ul li a:hover {
 .LatestUpdate .card-body .card-title a {
   text-decoration: none;
   color: #000;
-}
-
-.top {
-  width: 1200px;
-  margin: auto;
-}
-
-.footer {
-  width: 1200px;
-  margin: auto;
-}
-
-.bottom {
-  width: 1200px;
-  margin: auto;
 }
 
 .first-news p {

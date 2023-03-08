@@ -8,7 +8,7 @@ $sec:#DF0D00;
 }
 
 .container{
-    max-width: 1170px;
+    max-width: 1200px;
     margin: auto;
    
 }
@@ -48,11 +48,10 @@ $sec:#DF0D00;
     margin: 13px;
 }
 nav{
-    position: relative;
+    
     background: $brand;
     line-height: 45px;
-    width: 1200px;
-    margin: auto;
+   
     .nav{
         ul{
             list-style: none;
@@ -485,18 +484,7 @@ nav{
     }
 }
 
-.top{
-    width: 1200px;
-    margin: auto;
-}
-.footer{
-    width: 1200px;
-    margin: auto;
-}
-.bottom{
-    width: 1200px;
-    margin: auto;
-}
+
 .first-news{
     p{
         font-size: 20px;
