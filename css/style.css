@@ -45,12 +45,13 @@
 }
 
 .py {
-  margin: 13px;
+  margin: 20px;
 }
 
 nav {
   background: #0D47A1;
   line-height: 45px;
+  border-bottom: 3px solid #DF0D00;
 }
 nav .nav ul {
   list-style: none;
@@ -124,11 +125,23 @@ nav .nav ul li a:hover {
   text-decoration: none;
   color: #000;
 }
-.block2 .samachar h3 {
+.block2 .samachar .title {
+  position: relative;
+}
+.block2 .samachar .title span h3 {
   background: #DF0D00;
   padding: 5px 15px;
   color: #fff;
   display: inline-block;
+}
+.block2 .samachar .title span h3::before {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background: #0D47A1;
+  position: absolute;
+  left: 130px;
+  top: 15px;
 }
 .block2 .LatestUpdate {
   width: 25%;
@@ -209,11 +222,23 @@ nav .nav ul li a:hover {
   text-decoration: none;
   color: #000;
 }
-.rajniti h3 {
+.rajniti .title {
+  position: relative;
+}
+.rajniti .title span h3 {
   background: #DF0D00;
   padding: 5px 15px;
   color: #fff;
   display: inline-block;
+}
+.rajniti .title span h3::before {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: #0D47A1;
+  position: absolute;
+  left: 130px;
+  top: 15px;
 }
 
 .kanun-news .first-news p {
@@ -415,4 +440,32 @@ nav .nav ul li a:hover {
   top: 0;
   width: 100%;
   z-index: 999999;
+}
+
+.main {
+  display: grid;
+}
+.main header {
+  background: red;
+  display: inline-block;
+  color: #fff;
+  padding: 5rem;
+}
+.main article {
+  background: red;
+  display: inline-block;
+  color: #fff;
+  padding: 5rem;
+}
+.main aside {
+  background: red;
+  display: inline-block;
+  color: #fff;
+  padding: 5rem;
+}
+.main footer {
+  background: rgb(21, 17, 17);
+  display: inline-block;
+  color: #fff;
+  padding: 5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -45,12 +45,13 @@ $sec:#DF0D00;
     }
 }
 .py{
-    margin: 13px;
+    margin: 20px;
 }
 nav{
     
     background: $brand;
     line-height: 45px;
+    border-bottom: 3px solid $sec;
    
     .nav{
         ul{
@@ -144,13 +145,28 @@ nav{
                 color: #000;
             }
         }
-        h3{
-            background: #DF0D00;
-            padding: 5px 15px;
-            color: #fff;
-            display: inline-block;
-            
+        .title{
+            position: relative;
+            span{
+                h3{
+                    background: #DF0D00;
+                    padding: 5px 15px;
+                    color: #fff;
+                    display: inline-block;
+                    &::before{
+                        content: '';
+                        width: 80%;
+                        height: 2px;
+                        background:$brand;
+                        position: absolute;
+                        left: 130px;
+                        top: 15px;
+                    }
+                    
+                }
+            }
         }
+       
     
     }
     .LatestUpdate{
@@ -253,12 +269,26 @@ nav{
             }
         }
     }
-    h3{
-        background: #DF0D00;
-            padding: 5px 15px;
-            color: #fff;
-            display: inline-block;
-            
+    .title{
+        position: relative;
+        span{
+            h3{
+                background: #DF0D00;
+                padding: 5px 15px;
+                color: #fff;
+                display: inline-block;
+                &::before{
+                    content: '';
+                    width: 90%;
+                    height: 2px;
+                    background:$brand;
+                    position: absolute;
+                    left: 130px;
+                    top: 15px;
+                }
+                
+            }
+        }
     }
    }
    .kanun-news{
@@ -368,6 +398,7 @@ nav{
                 color: #000;
             }
         }
+        
     }
     .catName{
         text-align: center;
@@ -538,5 +569,36 @@ nav{
     z-index:999999;
 }
 
+
+
+// grid practise
+.main{
+display: grid;
+
+header{
+    background: red;
+    display: inline-block;
+    color: #fff;
+    padding: 5rem;
+}
+article{
+    background: red;
+    display: inline-block;
+    color: #fff;
+    padding: 5rem;
+}
+aside{
+    background: red;
+    display: inline-block;
+    color: #fff;
+    padding: 5rem;
+}
+footer{
+    background: rgb(21, 17, 17);
+    display: inline-block;
+    color: #fff;
+    padding: 5rem;
+}
+}
 
   
