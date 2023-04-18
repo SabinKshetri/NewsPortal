@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background: #f5f2f2;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -70,6 +74,11 @@ nav .nav ul li a:hover {
   background: #DF0D00;
   padding: 5px 20px;
 }
+nav .toggle {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 15px;
+}
 
 .btn {
   padding: 2px 13px;
@@ -133,15 +142,6 @@ nav .nav ul li a:hover {
   padding: 5px 15px;
   color: #fff;
   display: inline-block;
-}
-.block2 .samachar .title span h3::before {
-  content: "";
-  width: 80%;
-  height: 2px;
-  background: #0D47A1;
-  position: absolute;
-  left: 130px;
-  top: 15px;
 }
 .block2 .LatestUpdate {
   width: 25%;
@@ -231,15 +231,6 @@ nav .nav ul li a:hover {
   color: #fff;
   display: inline-block;
 }
-.rajniti .title span h3::before {
-  content: "";
-  width: 90%;
-  height: 2px;
-  background: #0D47A1;
-  position: absolute;
-  left: 130px;
-  top: 15px;
-}
 
 .kanun-news .first-news p {
   font-size: 15px;
@@ -260,53 +251,6 @@ nav .nav ul li a:hover {
   padding: 5px 15px;
   color: #fff;
   display: inline-block;
-}
-
-.footer {
-  background: #f4f2f2;
-  height: 200px;
-}
-.footer .logo h4 {
-  color: #DF0D00;
-}
-.footer .address h3 {
-  color: #000;
-}
-.footer .address ul {
-  list-style: none;
-}
-.footer .address ul li {
-  color: #323232;
-  text-decoration: none;
-}
-.footer .useful-links ul {
-  list-style: none;
-}
-.footer .useful-links ul li a {
-  text-decoration: none;
-  color: #000;
-  padding: 20px;
-}
-
-.bottom {
-  background: #0D47A1;
-  line-height: 45px;
-}
-.bottom .copy-right {
-  color: #fff;
-}
-.bottom .socail-icon ul {
-  list-style: none;
-}
-.bottom .socail-icon ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 26px;
-}
-.bottom .socail-icon ul li a:hover {
-  -webkit-box-shadow: 2px 2px 5px 3px rgba(239, 232, 232, 0.3);
-          box-shadow: 2px 2px 5px 3px rgba(239, 232, 232, 0.3);
-  padding: 5px;
 }
 
 .block-1 .first-news-1 h3 a {
@@ -442,30 +386,153 @@ nav .nav ul li a:hover {
   z-index: 999999;
 }
 
-.main {
-  display: grid;
+/* Css for footer */
+footer {
+  background: #0D47A1;
+  line-height: 30px;
+  /* css for Quick links */
 }
-.main header {
-  background: red;
-  display: inline-block;
+footer .contact h4 {
   color: #fff;
-  padding: 5rem;
 }
-.main article {
-  background: red;
-  display: inline-block;
+footer .contact .address p {
   color: #fff;
-  padding: 5rem;
 }
-.main aside {
-  background: red;
-  display: inline-block;
-  color: #fff;
-  padding: 5rem;
+footer .contact .social-media {
+  margin-left: -44px;
 }
-.main footer {
-  background: rgb(21, 17, 17);
-  display: inline-block;
+footer .contact .social-media ul {
+  list-style: none;
+}
+footer .contact .social-media ul li {
+  display: inline;
+}
+footer .contact .social-media ul li a {
+  text-decoration: none;
   color: #fff;
-  padding: 5rem;
+  padding: 10px;
+}
+footer .contact .social-media ul li a:hover {
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
+  color: #DF0D00;
+  font-size: 20px;
+}
+footer .quick-link h4 {
+  color: #fff;
+}
+footer .quick-link .links {
+  margin-left: -30px;
+}
+footer .quick-link .links ul {
+  list-style: none;
+}
+footer .quick-link .links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+footer .our-team h4 {
+  color: #fff;
+}
+footer .our-team .owner {
+  margin-left: -30px;
+}
+footer .our-team .owner ul {
+  list-style: none;
+}
+footer .our-team .owner ul li {
+  color: #fff;
+  font-size: 17px;
+}
+
+/* end of footer section */
+/* start of bottom footer */
+.bottom {
+  background: #0D47A1;
+  line-height: 50px;
+}
+.bottom .copy-right p {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Responsive code for all pages */
+@media (max-width: 480px) {
+  /* responsive top part */
+  .top .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  /* responsive of top logo and ads */
+  header .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  header .flex .logo {
+    padding: 10px;
+    border-bottom: 1px solid #DF0D00;
+  }
+  header .flex .ads img {
+    width: 100%;
+  }
+  .block1 .box-1 .advertisement img {
+    width: 100%;
+  }
+  .block2 .box2 .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .block2 .box2 .flex .samachar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .block2 .box2 .flex .samachar .first-news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .block2 .box2 .flex .samachar .first-news .card {
+    width: 100%;
+  }
+  .block2 .box2 .flex .samachar .second-news {
+    width: 100%;
+  }
+}
+/* responsive for tablet */
+@media (max-width: 768px) {
+  .top .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  /* responsive of top logo and ads */
+  header .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  header .flex .logo {
+    padding: 10px;
+    border-bottom: 1px solid #DF0D00;
+  }
+  header .flex .ads img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
