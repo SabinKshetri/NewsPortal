@@ -52,47 +52,23 @@ body {
   margin: 20px;
 }
 
-nav {
+nav.navbar.navbar-expand-lg.navbar-white.bg-body-primary.sticky-top {
   background: #0D47A1;
-  line-height: 45px;
-  border-bottom: 3px solid #DF0D00;
+  line-height: 40px;
+  border-bottom: 2px solid #DF0D00;
 }
-nav .nav ul {
-  list-style: none;
-}
-nav .nav ul li {
-  display: inline;
-}
-nav .nav ul li a {
-  text-decoration: none;
+
+.abc ul li a {
+  padding: 0 40px;
+  font-weight: bold;
   color: #fff;
-  padding: 0px 20px;
-  font-weight: 550;
-  text-align: center;
 }
-nav .nav ul li a:hover {
-  background: #DF0D00;
-  padding: 5px 20px;
-}
-nav .toggle {
-  font-size: 30px;
-  color: #fff;
-  margin-right: 15px;
+.abc ul li a:hover {
+  color: #DF0D00;
 }
 
 .btn {
-  padding: 2px 13px;
-  border: none;
-  background: #ccc;
-  border-radius: 17px;
-  margin: 10px;
-  color: #DF0D00;
-}
-.btn:hover {
-  background: #DF0D00;
   color: #fff;
-  -webkit-box-shadow: 2px 2px 5px 2px rgba(243, 7, 7, 0.3);
-          box-shadow: 2px 2px 5px 2px rgba(243, 7, 7, 0.3);
 }
 
 .block1 .box-1 {
